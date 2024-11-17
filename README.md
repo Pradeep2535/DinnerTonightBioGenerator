@@ -41,3 +41,19 @@ Check out the live application: [Bio Generator](https://dinnertonight-6wtz8i1l3-
 - ✅ Python 3.x
 - ✅ Vercel CLI (for deployment)
 - ✅ A Gemini API key
+
+### 🗂️ Project Structure
+
+DinnerTonightBioGenerator/
+├── model/
+│   ├── gemini_model.py      # Custom module for interacting with Gemini API
+│   ├── secrets.env          # Environment variables (for local use only)
+├── templates/
+│   ├── index.html           # Frontend HTML file
+├── static/
+│   ├── css/                 # CSS stylesheets
+│   ├── js/                  # JavaScript files
+├── app.py                   # Flask application entry point
+├── vercel.json              # Vercel deployment configuration
+├── requirements.txt         # Python dependencies
+

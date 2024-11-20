@@ -6,13 +6,13 @@ import google.generativeai as genai
 from google.ai.generativelanguage_v1beta.types import content
 
 # Custom module for the Gemini model
-from model.gemini_model import GeminiModel
+from model.groq1 import LlamaModel
 
 # Load environment variables (e.g., API keys and configurations)
 load_dotenv("model\\secrets.env")
 
 # Configure the Gemini API with the loaded API key
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+# genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Initialize the Flask application
 app = Flask(__name__)
@@ -53,7 +53,7 @@ def generate_content():
             return jsonify({"error": "All fields are required"}), 400
 
         # Create an instance of the GeminiModel to generate content
-        model = GeminiModel()
+        model = LlamaModel()
 
         # Generate content based on the provided inputs
         output_topic, output_description = model.generate_response(
@@ -62,7 +62,7 @@ def generate_content():
             interests=interests, 
             relationship_goals=relationship_goals
         )
-
+        print(output_description, output_topic)
         # Return the generated content as a JSON response
         return jsonify({
             "topic": output_topic,

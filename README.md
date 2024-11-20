@@ -14,7 +14,7 @@ A Flask-based web application that generates personalized bios based on user inp
 
 ## 🌍 Demo
 
-Check out the live application: [Bio Generator](https://dinnertonight-6wtz8i1l3-pradeep-ss-projects-eef2a107.vercel.app/)
+Check out the live application: [Bio Generator](https://dinnertonight.vercel.app/)
 
 ---
 

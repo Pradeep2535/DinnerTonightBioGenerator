@@ -20,10 +20,11 @@ Check out the live application: [Bio Generator](https://dinnertonight-6wtz8i1l3-
 
 ## 🛠️ Technologies Used
 
-### Backend:
-- **🐍 Python**: Core programming language.
-- **🍃 Flask**: Lightweight web framework to manage the server-side application.
-- **✨ Gemini API**: For generating dynamic and contextually relevant bios.
+### Backend:  
+- 🐍 **Python**: Core programming language.  
+- 🍃 **Flask**: Lightweight web framework to manage the server-side application.  
+- 🦙 **Llama Model**: Primary model used for generating dynamic and contextually relevant bios.  
+- ✨ **Gemini Model**: Present in the project for reference purposes but not actively used.  
 
 ### Frontend:
 - **📄 HTML5**: Structure of the web application.
